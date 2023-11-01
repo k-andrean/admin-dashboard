@@ -4,74 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="sidebar-title">
-                <img src="/images/dashboard.svg" alt="Dashboard Icon">
+                <img src="images/icons/dashboard-outline.svg" alt="Dashboard Icon" class="dashboard-icon">
                 <span>Dashboard</span>
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Home Icon">
+                        <img src="images/icons/home-outline.svg" alt="Home Icon" class="icon">
                         <span>Home</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Profike Icon">
+                        <img src="images/icons/card-account-details-outline.svg" alt="Profile Icon" class="icon">
                         <span>Profile</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Messages Icon">
+                        <img src="images/icons/message-reply-outline.svg" alt="Messages Icon" class="icon">
                         <span>Messages</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="History Icon">
+                        <img src="images/icons/history.svg" alt="History Icon" class="icon">
                         <span>History</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Tasks Icon">
+                        <img src="images/icons/note-multiple-outline.svg" alt="Tasks Icon" class="icon">
                         <span>Tasks</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Communities Icon">
+                        <img src="images/icons/account-group-outline.svg" alt="Communities Icon" class="icon">
                         <span>Communities</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Settings Icon">
+                        <img src="images/icons/cog-outline.svg" alt="Settings Icon" class="icon">
                         <span>Settings</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Support Icon">
+                        <img src="images/icons/tooltip-question-outline.svg" alt="Support Icon" class="icon">
                         <span>Support</span>
                     </li>
                     <li>
-                        <img src="/images/dashboard.svg" alt="Privacy Icon">
+                        <img src="images/icons/shield-check-outline.svg" alt="Privacy Icon" class="icon">
                         <span>Privacy</span>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="header">
-            <div class="search-bar">
-                <img src="/images/dashboard.svg" alt="Search Icon">
-                <span contenteditable="true"></span>
-            </div>
-            <div class="notification">
-                <img src="/images/dashboard.svg" alt="Search Icon">
-                <img src="/images/dashboard.svg" alt="Search Icon">
-                <div class="notif-text">Morgan Oakley</div>
-            </div>
-            <div class="user-profile">
-                <img src="/images/dashboard.svg" alt="Search Icon">
-                <div class="user-greeting">Hi there,</div>
+            <div class="left-header">
+                <div class="search-bar">
+                    <img src="images/icons/magnify.svg" alt="Search Icon" class="icon">
+                    <span contenteditable="true"></span>
+                </div>
+                <img src="images/icons/icons8-son-goku.svg" alt="Profile Icon" class="big-icon" id="header-icon">
                 <div class="user-name">Morgan Oakley (@morgan)</div>
+                <span class="greeting" style="font-size: 10px;">Hi there,</span>
             </div>
-            <div class="user-button">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="right-header">
+                <div class="notification">
+                    <img src="images/icons/bell-ring-outline.svg" alt="Notification Icon" class="icon">
+                    <img src="images/icons/icons8-son-goku.svg" alt="Profile Icon" class="icon">
+                    <div class="notif-text">Morgan Oakley</div>
+                </div>
+                <div class="user-button">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
         <div class="main-content">
@@ -80,56 +86,57 @@
                     <p class="title">Super Cool Project</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="lower-icon">
-                        <img src="/images/dashboard.svg" alt="Bookmark Icon">
-                        <img src="/images/dashboard.svg" alt="Seen Icon">
-                        <img src="/images/dashboard.svg" alt="Share Icon">
+                        <img src="images/icons/star-check-outline.svg" alt="Bookmark Icon" class="icon">
+                        <img src="images/icons/eye-plus-outline.svg" alt="Seen Icon" class="icon">
+                        <img src="images/icons/source-fork.svg" alt="Share Icon" class="icon">
                     </div>
                   </div>
                   <div class="card">
                     <p class="title">Less Cool Project</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                     <div class="lower-icon">
-                        <img src="/images/dashboard.svg" alt="Bookmark Icon">
-                        <img src="/images/dashboard.svg" alt="Seen Icon">
-                        <img src="/images/dashboard.svg" alt="Share Icon">
+                        <img src="images/icons/star-check-outline.svg" alt="Bookmark Icon" class="icon">
+                        <img src="images/icons/eye-plus-outline.svg" alt="Seen Icon" class="icon">
+                        <img src="images/icons/source-fork.svg" alt="Share Icon" class="icon">
                     </div>
                   </div>
                   <div class="card">
                     <p class="title">Impossible App</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     <div class="lower-icon">
-                        <img src="/images/dashboard.svg" alt="Bookmark Icon">
-                        <img src="/images/dashboard.svg" alt="Seen Icon">
-                        <img src="/images/dashboard.svg" alt="Share Icon">
+                        <img src="images/icons/star-check-outline.svg" alt="Bookmark Icon" class="icon">
+                        <img src="images/icons/eye-plus-outline.svg" alt="Seen Icon" class="icon">
+                        <img src="images/icons/source-fork.svg" alt="Share Icon" class="icon">
                     </div>
                   </div>
                   <div class="card">
                     <p class="title">Easy Peasy App</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                     <div class="lower-icon">
-                        <img src="/images/dashboard.svg" alt="Bookmark Icon">
-                        <img src="/images/dashboard.svg" alt="Seen Icon">
-                        <img src="/images/dashboard.svg" alt="Share Icon">
+                        <img src="images/icons/star-check-outline.svg" alt="Bookmark Icon" class="icon">
+                        <img src="images/icons/eye-plus-outline.svg" alt="Seen Icon" class="icon">
+                        <img src="images/icons/source-fork.svg" alt="Share Icon" class="icon">
                     </div>
                 </div>
                 <div class="card">
                     <p class="title">Ad Blocker</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="lower-icon">
-                        <img src="/images/dashboard.svg" alt="Bookmark Icon">
-                        <img src="/images/dashboard.svg" alt="Seen Icon">
-                        <img src="/images/dashboard.svg" alt="Share Icon">
+                        <img src="images/icons/star-check-outline.svg" alt="Bookmark Icon" class="icon">
+                        <img src="images/icons/eye-plus-outline.svg" alt="Seen Icon" class="icon">
+                        <img src="images/icons/source-fork.svg" alt="Share Icon" class="icon">
                     </div>
                 </div>
                 <div class="card">
                     <p class="title">Money Maker</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                     <div class="lower-icon">
-                        <img src="/images/dashboard.svg" alt="Bookmark Icon">
-                        <img src="/images/dashboard.svg" alt="Seen Icon">
-                        <img src="/images/dashboard.svg" alt="Share Icon">
+                        <img src="images/icons/star-check-outline.svg" alt="Bookmark Icon" class="icon">
+                        <img src="images/icons/eye-plus-outline.svg" alt="Seen Icon" class="icon">
+                        <img src="images/icons/source-fork.svg" alt="Share Icon" class="icon">
                     </div>
                 </div>
+                <span style="font-weight: 700;">Your Projects</span>
             </div>
             <div class="update-content">
                 <div class="announcement">
@@ -147,27 +154,29 @@
                     </div>
                 </div>
                 <div class="trending">
-                    <div id="user1">
-                        <img src="/images/dashboard.svg" alt="Profile Icon">
+                    <div id="user1" class="user-update">
+                        <img src="images/icons/icons8-son-goku.svg" alt="Profile Icon" class="icon" id="user-icon">
                         <div class="tagname">@tegan</div>
                         <div class="quote">World Peace Builder</div>
                     </div>
-                    <div id="user2">
-                        <img src="/images/dashboard.svg" alt="Profile Icon">
+                    <div id="user2" class="user-update">
+                        <img src="images/icons/icons8-bt21-chimmy.svg" alt="Profile Icon" class="icon" id="user-icon">
                         <div class="tagname">@morgan</div>
                         <div class="quote">Super Cool Project</div>
                     </div>
-                    <div id="user3">
-                        <img src="/images/dashboard.svg" alt="Profile Icon">
+                    <div id="user3" class="user-update">
+                        <img src="images/icons/icons8-super-mario.svg" alt="Profile Icon" class="icon" id="user-icon">
                         <div class="tagname">@kendall</div>
                         <div class="quote">Life Changing App</div>
                     </div>
-                    <div id="user4">
-                        <img src="/images/dashboard.svg" alt="Profile Icon">
+                    <div id="user4" class="user-update">
+                        <img src="images/icons/icons8-iron-man.svg" alt="Profile Icon" class="icon" id="user-icon">
                         <div class="tagname">@alex</div>
                         <div class="quote">No traffic Maker</div>
                     </div>
+                    <span style="font-weight: 700;">Trending</span>
                 </div>
+                <span style="font-weight: 700;">Announcements</span>
             </div>
         </div>
     </div>
