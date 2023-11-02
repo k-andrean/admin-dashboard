@@ -224,6 +224,7 @@ button{
 .article{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1.3fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1.3fr));
    
   
     gap: 1rem;
