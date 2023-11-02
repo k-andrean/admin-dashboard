@@ -5,12 +5,31 @@
 
 body{
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Using google fonts roboto font for body font style */
 }
 
+/* various icon size used in dashboard html */
+.icon{
+    width: 1rem;
+    height: 1rem;
+
+}
+.big-icon{
+    width: 3rem;
+    height: 2rem;
+}
+
+.profile-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* main container styling and positioning elements with grid display */
 .container{
-    width:100vw;
-    height:100vh;
+
+    width: 100vw;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: 1.5fr 6fr;
@@ -21,8 +40,9 @@ body{
   
   }
 
+/* sidebar styling and positioning elements with grid display */
 .sidebar{
-    grid-area: sidebar;
+    grid-area: sidebar; 
 
     display: grid;
     grid-template-rows: 1fr 7fr;
@@ -36,34 +56,39 @@ body{
     font-weight: 600;
 }
 
+
+/* styling sidebar title dashboard font size to be bigger than the rest of list elements font size */
 .sidebar-title span{
     vertical-align: top;
-    margin-left: 0.2rem;
+    margin-left: 0.1rem;
 
-    font-size: 1.2rem;
+    font-size: 20px;
 
 }
 
 
 li{
     list-style-type: none;
+    margin-left: 1rem;
 }
 
 li + li {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 0.2rem;
+    margin-top: 0.2rem;
 }
 
+/* positioning text beside every icon in sidebar */
 li span{
     vertical-align: top;
-    margin-left: 0.7rem;
+    margin-left: 1.4rem;
 }
 
 .menu li:nth-child(6) {
-    margin-bottom: 2rem; /* Adjust the margin as needed */
+    margin-bottom: 2rem; /* spacing between communities icon and settings icon */
 }
 
 
+/* styling dashboard header section and positioning all elements with flexbox and grid display */
 .header{
     grid-area: header;
 
@@ -72,12 +97,13 @@ li span{
     grid-template-rows: 1fr;
 
 
-    padding: 10px;
+    padding: 0.8rem;
 
     font-weight: 700;
 
 }
 
+/* left parts of header section */
 .left-header {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr 1.5fr;
@@ -90,14 +116,40 @@ li span{
 
     ;
 
-    row-gap: 5px;
+    row-gap: 0.4rem;
     
   }
 
+/* search bar header section */
 .search-bar{
     grid-area: search;
 }
 
+.search-bar{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.5rem;
+}
+
+
+.search-bar .icon{
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+.search-bar > span{
+    flex: 1; /* expand search bar to fill in remaining size available */
+    max-width: 80%;
+
+    
+    border-radius: 10px;
+
+
+    background-color: #e5e5e5;
+}
+
+/* lower part of left section area containing user name, greetings and icon */
 #header-icon{
     grid-area: icon;
 }
@@ -110,48 +162,24 @@ li span{
     grid-area: greet;
 }
 
-.search-bar{
-    display: flex;
-    align-items: center;
 
-    margin-bottom: 10px;
-}
-
-
-.search-bar .icon{
-    margin-right: 10px;
-    margin-left: 2px;
-}
-
-.search-bar > span{
-    flex: 1;
-    max-width: 80%;
-
-    
-    border-radius: 10px;
-    background-color: #e5e5e5;
-}
-
+/* right parts of header section containing notification and user button */
 .notification {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 
-    margin-bottom: 25px;
+    gap: 1.5rem;
+
+    margin-bottom: 1.5rem;
 }
 
-button{
-    background-color: #38bdf8;
-    color: black;
 
-    font-size: 0.8rem;
-
-    border-radius: 8px;
-
-    min-width: 5rem;
-    min-height: 1.5rem;
+.notif-text{
+    font-size: 12px;
 }
 
+/* styling and positioning header button */
 .user-button {
     display: flex;
     gap: 20px;
@@ -159,7 +187,25 @@ button{
     margin-left: 20px;
 }
 
+button{
+    
+    min-width: 5rem;
+    min-height: 1.5rem;
 
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    
+
+    font-size: 12px;
+    
+    background-color: #38bdf8;
+    color: white;
+    
+}
+
+
+
+/* styling for main body content containing article card announcement and trending section */
 .main-content{
     grid-area: main;
 
@@ -174,57 +220,19 @@ button{
     color: #737373;
 }
 
+/* styling article and card section */
 .article{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1.3fr));
    
   
-    gap: 15px;
+    gap: 1rem;
+
     position: relative;
 }
 
-
-  
-  .article .card {
-    background-color: #FFFFFF;
-    color: black;
-    text-align: left;
-  
-    display: grid;
-    grid-template-rows: 0.1fr 0.8fr 0.1fr;
-
-    border-left: 4px solid sandybrown;
-    
-    
-    padding: 1rem;
-    
-  }
-  
-  .card p {
-    color: #737373;
-    font-weight: normal;
-    font-size: 14px;
-    text-align: start;
-
-    
-  }
-  
-  .card .title {
-    font-size: 16px;
-    font-weight: 700;
-    text-align: left;
-    color: #737373;
-  
-    margin-bottom: 10px;
-  }
-
-  .lower-icon{
-    justify-self: end;
-
-    margin-top: 0.5rem;
-  }
-
-  .article > span {
+/* positioning span text on top left of article body */
+.article > span {
     position: absolute;
 
     left: 0;
@@ -232,20 +240,75 @@ button{
 }
 
 
+.article .card {
+
+    display: grid;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+    
+    padding: 1rem;
+
+    text-align: left;
+
+    background-color: #FFFFFF;
+    color: black;
+
+    border-left: 4px solid sandybrown;
+    
+    
+}
+  
+.card p {
+    
+    font-weight: normal;
+    font-size: 14px;
+    text-align: start;
+
+    color: #737373;
+
+}
+  
+.card .title {
+  
+    margin-bottom: 0.3rem;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+
+    color: #737373;
+}
+
+/* styling for icons in card section bottom part */
+.lower-icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 1rem;
+
+    margin-top: 0.5rem;
+}
+
+
+/* styling for container containing announcement and trending box */
 .update-content{
     display: grid;
     grid-template-rows: 3fr 3fr;
 
     gap: 1.5rem;
+    
     position: relative;
 }
 
+/* positioning span text element on top left update content container */
 .update-content > span {
+    
     position: absolute;
 
     left: 0;
     top: -2rem;
 }
+
 
 .announcement{
     display: grid;
@@ -260,37 +323,45 @@ button{
     border-radius: 4px;
 }
 
+
 .announcement .title {
     font-weight: 700;
 }
 
+/* styling card element inside announcement box */
 .update-card{
     padding: 0.5rem;
 
     border-bottom: 2px solid sandybrown;
 }
 
+
 .trending{
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 
-    font-size: 13px;
-    padding: 1rem;
-
     row-gap: 0.5rem;
 
+    padding: 1rem;
+
+    font-size: 13px;
+
     position: relative;
+
     background-color: white;
     border-radius: 4px;
 }
 
+/* positioning span text element on top left corner of trending box */
 .trending > span {
     position: absolute;
 
     left: 0;
     top: -1.2rem;
+
 }
 
+/* grid positioning of icons and texts inside trending box so that its line up horizontally */
 .user-update{
     display: grid;
     grid-template-columns: 0.7fr 3fr;
@@ -307,38 +378,23 @@ button{
     
 }
 
+/* user profile icon */
 #user-icon{
     grid-area: usericon;
 
-    width: 2rem;
-    height: 2rem;
-
 }
 
+/* user tagname */
 .tagname{
     grid-area: tagname;
 
     
 }
 
+/* user quote */
 .quote{
     grid-area: quote;
 
 }
 
 
-.icon{
-    width:20px;
-    height:20px;
-
-}
-
-.big-icon{
-    width: 60px;
-    height: 40px;
-}
-
-.dashboard-icon{
-    width: 30px;
-    height: 30px;
-}
